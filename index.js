@@ -9,19 +9,23 @@ const felhasznaloGOMB=document.querySelector("#felhasznalok")
 
 const services = new Services()
 
-TERMEKEKGOMB.addEventListener("click", ()=>{
+TERMEKEKGOMB.addEventListener("click", (event)=>{
+    event.preventDefault()
     services.getData(VEGPONT, termekAdatok)
 })
-felhasznaloGOMB.addEventListener("click", ()=>{
+felhasznaloGOMB.addEventListener("click", (event)=>{
+    event.preventDefault()
     services.getData("https://fakestoreapi.com/users", felhasznaloAdatok)
 })
 
 
 function termekAdatok(data){
     console.log(data)
+    SZULOELEM.innerHTML = ""
     new Termekek(data, SZULOELEM)
 }
 function felhasznaloAdatok(data){
     console.log(data)
+    SZULOELEM.innerHTML = ""
     new Users(data, SZULOELEM)
 }
