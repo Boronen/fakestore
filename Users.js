@@ -1,4 +1,4 @@
-import User from "./user.js"
+import User from "./User.js"
 export default class Users {
     #list = []
 
