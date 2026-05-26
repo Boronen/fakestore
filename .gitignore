@@ -1,0 +1,13 @@
+# Node modules
+/node_modules
+
+# Documentation output
+/out
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db

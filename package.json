@@ -1,0 +1,22 @@
+{
+  "name": "fakestore",
+  "version": "1.0.0",
+  "description": "FakeStore webáruház - REST API demo projekt",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "doc": "npx jsdoc -c jsdoc.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Boronen/fakestore.git"
+  },
+  "keywords": ["fakestore", "rest", "api", "demo"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docdash": "^2.0.2",
+    "jsdoc": "^4.0.2"
+  }
+}
