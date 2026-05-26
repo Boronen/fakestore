@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Services.html">Services</a></li><li><a href="Termek.html">Termek</a></li><li><a href="Termekek.html">Termekek</a></li><li><a href="User.html">User</a></li><li><a href="Users.html">Users</a></li><li><a href="module.exports_module.exports.html">exports</a></li><li></li><li></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#SZULOELEM">SZULOELEM</a></li><li><a href="global.html#TERMEKEKGOMB">TERMEKEKGOMB</a></li><li><a href="global.html#VEGPONT">VEGPONT</a></li><li><a href="global.html#felhasznaloAdatok">felhasznaloAdatok</a></li><li><a href="global.html#felhasznaloGOMB">felhasznaloGOMB</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#megjelenit">megjelenit</a></li><li><a href="global.html#services">services</a></li><li><a href="global.html#termekAdatok">termekAdatok</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>FakeStore Webáruház</h1>
+<p>A FakeStore webáruház egy demo projekt, amely a <a href="https://fakestoreapi.com/">FakeStore API</a> nyilvános végpontjához csatlakozik.</p>
+<h2>Projekt célja</h2>
+<p>A projekt célja, hogy megismerjük a RESTful alkalmazások készítésének alapjait, és gyakoroljuk a JavaScript osztályalapú programozást.</p>
+<h2>Funkciók</h2>
+<ul>
+<li><strong>Termékek listázása</strong>: A FakeStore API-ról termékek lekérése és megjelenítése</li>
+<li><strong>Felhasználók listázása</strong>: Felhasználói adatok lekérése és megjelenítése</li>
+<li><strong>Dinamikus tartalom</strong>: Aszinkron API hívások fetch használatával</li>
+<li><strong>Tiszta kód</strong>: Osztályalapú architektúra, szeparált nézetek</li>
+</ul>
+<h2>Projekt struktúra</h2>
+<pre class="prettyprint source"><code>fakestore/
+├── src/
+│   ├── index.js        # Fő belépési pont, eseménykezelők
+│   ├── Services.js     # API kommunikációs szolgáltatás
+│   ├── Termek.js       # Egy termék megjelenítése
+│   ├── Termekek.js     # Termékek listájának megjelenítése
+│   ├── User.js         # Egy felhasználó megjelenítése
+│   ├── Users.js        # Felhasználók listájának megjelenítése
+│   └── index.css       # Stílusok
+├── out/                # Generált dokumentáció
+├── index.html          # Főoldal
+├── jsdoc.json          # JSDoc konfiguráció
+├── package.json        # NPM projekt konfiguráció
+└── README.md           # Projekt dokumentáció
+</code></pre>
+<h2>Telepítés</h2>
+<ol>
+<li>Klónozd le a repository-t:</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code>git clone https://github.com/Boronen/fakestore.git
+cd fakestore
+</code></pre>
+<ol start="2">
+<li>Telepítsd a függőségeket:</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code>npm install
+</code></pre>
+<h2>Használat</h2>
+<p>Nyisd meg az <code>index.html</code> fájlt egy böngészőben vagy használj egy live servert.</p>
+<p>A felületen két gomb található:</p>
+<ul>
+<li><strong>Termékek</strong> - Betölti és megjeleníti a termékeket</li>
+<li><strong>Felhasználók</strong> - Betölti és megjeleníti a felhasználókat</li>
+</ul>
+<h2>Dokumentáció</h2>
+<p>A projekt JSDoc segítségével dokumentált. A dokumentáció generálása:</p>
+<pre class="prettyprint source lang-bash"><code>npm run doc
+</code></pre>
+<p>A generált dokumentáció az <code>out/</code> mappában érhető el. Nyisd meg az <code>out/index.html</code> fájlt böngészőben a dokumentáció megtekintéséhez.</p>
+<h3>JSDoc konfiguráció</h3>
+<p>A projekt a <strong>docdash</strong> sablont használja a dokumentáció generálásához, amely modernebb és áttekinthetőbb megjelenést biztosít.</p>
+<h2>Technológiák</h2>
+<ul>
+<li><strong>Vanilla JavaScript (ES6+)</strong>: Osztályok, modulok, fetch API</li>
+<li><strong>HTML5 &amp; CSS3</strong>: Alapvető webes technológiák</li>
+<li><strong>FakeStore API</strong>: RESTful API demo adatokkal</li>
+<li><strong>JSDoc</strong>: Automatikus dokumentáció generálás</li>
+</ul>
+<h2>API Végpontok</h2>
+<ul>
+<li>Termékek: <code>https://fakestoreapi.com/products</code></li>
+<li>Felhasználók: <code>https://fakestoreapi.com/users</code></li>
+</ul>
+<h2>Fejlesztés</h2>
+<p>Az alkalmazás moduláris felépítésű:</p>
+<ul>
+<li><strong>Services</strong>: API hívások kezelése</li>
+<li><strong>View osztályok</strong>: Termékek és felhasználók megjelenítése</li>
+<li><strong>Szeparált felelősségek</strong>: Minden osztály egy jól definiált feladatot lát el</li>
+</ul>
+<h2>Licensz</h2>
+<p>ISC</p>
+<h2>Kapcsolat</h2>
+<p>Ha kérdésed van a projekttel kapcsolatban, nyiss egy issue-t a GitHub repository-ban.</p></article>
+    </section>
+
+
+
+
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            index.js
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>A FakeStore webáruház fő belépési pontja.
+Az alkalmazás inicializálását és az eseménykezelőket tartalmazza.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+                <div class="description usertext"><p>A FakeStore webáruház fő belépési pontja.
+Az alkalmazás inicializálását és az eseménykezelőket tartalmazza.</p></div>
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Tue May 26 2026 12:10:43 GMT+0200 (közép-európai nyári idő) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
